@@ -1,25 +1,64 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Yue Su's Page</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+
+    <!-- 内联 CSS，不依赖外部文件 -->
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.4em;
+            margin-bottom: 40px;
+        }
+
+        .nav-option {
+            display: block;
+            margin: 20px 0;
+            padding: 20px 30px;
+            font-size: 1.5em;              /* 字号更大 */
+            text-decoration: none;
+            background: #ffffff;
+            border: 2px solid #333;
+            border-radius: 12px;
+            width: 300px;                  /* 按钮更宽 */
+            margin-left: auto;
+            margin-right: auto;
+            transition: 0.25s;
+            color: #000;
+        }
+
+        .nav-option:hover {
+            background: #333;
+            color: white;
+            transform: translateY(-3px);
+        }
+    </style>
 </head>
 
-
 <body>
+    <div class="container">
+        <h1>Navigation</h1>
 
-<h1>Yue Su</h1>
-
-<h2>Welcome to my page</h2>
-
-<ul>
-  <li><a href="thesis.html">Undergraduate Thesis</a></li>
-  <li><a href="seminars.html">Seminar Notes</a></li>
-  <li><a href="advanced courses.html">Advanced Courses</a></li>
-</ul>
-
+        <a href="index.html" class="nav-option">Home Page</a>
+        <a href="seminar.html" class="nav-option">Seminar Notes</a>
+        <a href="thesis.html" class="nav-option">Undergraduate Thesis</a>
+    </div>
 </body>
 </html>
+
 
